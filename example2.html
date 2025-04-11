@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demo</title>
+    <link rel="stylesheet" href="example2.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Interactive Demo</h1>
+    </header>
+
+    <main>
+        <!-- DOM Manipulation Section -->
+        <section id="dom-section">
+            <h2>DOM Manipulation</h2>
+            <div class="demo-box">
+                <p id="change-text">This text will change when you click the button.</p>
+                <button type="button" id="text-changer">Change Text</button>
+                <button type="button" id="add-element">Add New Item</button>
+                <div id="element-container"></div>
+            </div>
+        </section>
+
+        <!-- Event Handling Section -->
+        <section id="events-section">
+            <h2>Event Handling</h2>
+            <div class="demo-box">
+                <div id="mouse-box" class="interactive-box">Hover, click or double-click me</div>
+                <p id="event-status">Event status will appear here</p>
+                <form id="user-form">
+                    <label for="name-input" class="visually-hidden">Name:</label>
+                    <input type="text" id="name-input" placeholder="Enter your name">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- API Fetching Section -->
+        <section id="api-section">
+            <h2>API Fetching</h2>
+            <div class="demo-box">
+                <button type="button" id="fetch-users">Get Random Users</button>
+                <div id="user-data" class="data-container"></div>
+            </div>
+        </section>
+
+        <!-- Todo App Section -->
+        <section id="todo-section">
+            <h2>Todo Application</h2>
+            <div class="demo-box">
+                <form id="todo-form">
+                    <input type="text" id="todo-input" placeholder="What needs to be done?">
+                    <button type="submit">Add Todo</button>
+                </form>
+                <ul id="todo-list"></ul>
+            </div>
+        </section>
+
+        <!-- Calculator Section -->
+        <section id="calculator-section">
+            <h2>Simple Calculator</h2>
+            <div class="demo-box calculator">
+                <div class="calculator-display" id="calc-display">0</div>
+                <div class="calculator-buttons">
+                    <button type="button" class="calc-btn" data-value="7">7</button>
+                    <button type="button" class="calc-btn" data-value="8">8</button>
+                    <button type="button" class="calc-btn" data-value="9">9</button>
+                    <button type="button" class="calc-btn operator" data-value="/">/</button>
+                    
+                    <button type="button" class="calc-btn" data-value="4">4</button>
+                    <button type="button" class="calc-btn" data-value="5">5</button>
+                    <button type="button" class="calc-btn" data-value="6">6</button>
+                    <button type="button" class="calc-btn operator" data-value="*">×</button>
+                    
+                    <button type="button" class="calc-btn" data-value="1">1</button>
+                    <button type="button" class="calc-btn" data-value="2">2</button>
+                    <button type="button" class="calc-btn" data-value="3">3</button>
+                    <button type="button" class="calc-btn operator" data-value="-">-</button>
+                    
+                    <button type="button" class="calc-btn" data-value="0">0</button>
+                    <button type="button" class="calc-btn" data-value=".">.</button>
+                    <button type="button" class="calc-btn" id="calc-clear">C</button>
+                    <button type="button" class="calc-btn operator" data-value="+">+</button>
+                    
+                    <button type="button" class="calc-btn span-2" id="calc-equals">=</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Open browser console to see additional JavaScript output</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
